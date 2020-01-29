@@ -1,0 +1,10 @@
+<ion-list>
+  <span *ngFor="let standing of standings">
+  <ion-list-header>
+    <ion-label>{{standing.letter}}</ion-label>
+  </ion-list-header>
+  <ion-item *ngFor="let ranking of standing.ordered_teams">
+      <ion-label>{{ranking.country}} : {{ranking.points}}</ion-label>
+  </ion-item>
+  </span>
+</ion-list>
